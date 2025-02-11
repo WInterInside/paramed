@@ -1,0 +1,202 @@
+.hero {
+	position: relative;
+	width: 100%;
+	min-height: calc(100vh - 130px);
+	background-image: url("../img/hero-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	color: #fff;
+	border-radius: 16px;
+	overflow: hidden;
+	margin-top: 132px;
+	margin-bottom: 32px;
+
+	@media only screen and (max-width: 1200px) {
+		margin-top: 98px;
+	}
+
+	@media only screen and (max-width: 900px) {
+		margin-top: 70px;
+	}
+
+	&::before {
+		position: absolute;
+		content: "";
+		z-index: 0;
+		top: 0;
+		left: 0;
+		height: 65%;
+		width: 100%;
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0) 100%);
+	}
+
+	&__content {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__main-text {
+		font-size: 132px;
+		font-weight: 500;
+		line-height: 132px;
+		letter-spacing: -0.04em;
+		text-align: center;
+		margin-bottom: 16px;
+
+		@media (max-width: 1500px) {
+			font-size: 100px;
+			line-height: 110px;
+			background-color: #a4a47c4e;
+			backdrop-filter: blur(5px);
+			padding: 20px 40px;
+			border-radius: 6px;
+		}
+
+		@media (max-width: 1000px) {
+			font-size: 32px;
+			line-height: 42px;
+			padding: 10px;
+			border-radius: 6px;
+		}
+
+		@media (max-width: 900px) {
+			font-size: 20px;
+			line-height: 24px;
+			padding: 6px;
+			border-radius: 6px;
+		}
+	}
+
+	&__sub-text {
+		width: 70%;
+		font-size: 36px;
+		font-weight: 500;
+		line-height: 45.9px;
+		text-align: center;
+		margin: 0;
+		margin-bottom: 124px;
+
+		@media (max-width: 1500px) {
+			background-color: #a4a47c4e;
+			backdrop-filter: blur(5px);
+			padding: 20px 40px;
+			border-radius: 6px;
+		}
+
+
+		@media (max-width: 1000px) {
+			width: 90%;
+			font-size: 18px;
+			line-height: 22px;
+			margin: 0 0 20px 0;
+			padding: 10px;
+			border-radius: 6px;
+		}
+	}
+
+	&__button {
+		gap: 13px;
+		max-width: 302px;
+	}
+
+	&--page {
+		padding: 60px;
+
+		@media only screen and (max-width: 1200px) {
+			padding: 10px;
+		}
+
+		.hero__main-text {
+			font-size: 64px;
+			font-weight: 600;
+			line-height: 81.6px;
+			text-align: left;
+			align-self: flex-start;
+
+			@media (max-width: 1500px) {
+				font-size: 100px;
+				line-height: 110px;
+				background-color: #a4a47c4e;
+				backdrop-filter: blur(5px);
+				padding: 20px 40px;
+				border-radius: 6px;
+			}
+	
+			@media (max-width: 1000px) {
+				font-size: 32px;
+				line-height: 42px;
+				padding: 10px;
+				border-radius: 6px;
+			}
+	
+			@media (max-width: 900px) {
+				font-size: 20px;
+				line-height: 24px;
+				padding: 6px;
+				border-radius: 6px;
+			}
+		}
+
+		.hero__sub-text {
+			align-self: flex-start;
+			text-align: left;
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 36px;
+			text-align: left;
+			color: #FFFFFFA3;
+
+			@media (max-width: 1500px) {
+				background-color: #a4a47c4e;
+				backdrop-filter: blur(5px);
+				padding: 20px 40px;
+				border-radius: 6px;
+			}
+	
+	
+			@media (max-width: 1000px) {
+				width: 100%;
+				font-size: 18px;
+				line-height: 22px;
+				margin: 0 0 20px 0;
+				padding: 10px;
+				border-radius: 6px;
+			}
+		}
+
+		.button {
+			align-self: flex-start;
+			margin-right: auto;
+
+			@media only screen and (max-width: 900px) {
+				margin: 0 auto;
+			}
+		}
+	}
+
+	&--service {
+		background-image: url("../img/service-bg.jpg");
+	}
+
+	&--about {
+		background-image: url("../img/about-bg.jpg");
+	}
+
+	&--devices {
+		background-image: url("../img/devices-bg.jpg");
+	}
+
+	&--contacts {
+		background-image: url("../img/contacts-bg.jpg");
+	}
+
+	&--works {
+		background-image: url("../img/works-bg.jpg");
+	}
+}

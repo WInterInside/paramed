@@ -1,0 +1,112 @@
+.works {
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__item {
+		display: flex;
+		gap: 64px;
+		padding: 64px 0;
+
+		@media only screen and (max-width: 1500px) {
+			gap: 24px;
+			padding: 24px 0;
+		}
+
+		@media only screen and (max-width: 1200px) {
+			flex-direction: column-reverse;
+		}
+	}
+
+	&__previews {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+		width: calc(40% - 64px / 2);
+		height: 500px;
+
+		@media only screen and (max-width: 1500px) {
+			width: calc(40% - 24px / 2);
+			height: 400px;
+		}
+
+		@media only screen and (max-width: 1200px) {
+			width: 100%;
+			height: 180px;
+			flex-wrap: nowrap;
+		}
+
+		@media only screen and (max-width: 900px) {
+			overflow-x: scroll;
+		}
+
+		& a {
+			width: calc(50% - 12px / 2);
+			height: calc(50% - 12px / 2);
+			position: relative;
+			overflow: hidden;
+			border-radius: 16px;
+
+			@media only screen and (max-width: 1200px) {
+				width: calc(25% - 12px / 2);
+				height: 100%;
+			}
+
+			@media only screen and (max-width: 900px) {
+				min-width: 220px;				
+				flex-shrink: 0;
+			}
+
+			& img {
+				position: absolute;
+				inset: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				transition: transform .3s;
+				object-position: center;
+			}
+
+			@media (hover: hover) {
+				&:hover {
+					& img {
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+	}
+
+	&__content {
+		width: calc(60% - 64px / 2);
+
+		@media only screen and (max-width: 1500px) {
+			width: calc(60% - 24px / 2);
+		}
+
+		@media only screen and (max-width: 1200px) {
+			width: 100%;
+		}
+
+		& h2 {
+			font-size: 42px;
+			font-weight: 600;
+			line-height: 53.55px;
+			text-align: left;
+			text-transform: uppercase;
+
+			@media only screen and (max-width: 1500px) {
+				font-size: 32px;
+				font-weight: 600;
+				line-height: 43.55px;
+			}
+
+			@media only screen and (max-width: 900px) {
+				font-size: 24px;
+				font-weight: 600;
+				line-height: 33.55px;
+			}
+		}
+	}
+}

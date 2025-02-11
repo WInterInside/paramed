@@ -1,0 +1,236 @@
+.contacts {
+	&__wrapper {
+		display: flex;
+		width: 100%;
+		gap: 32px;
+
+		@media only screen and (max-width: 1400px) {
+			gap: 20px;
+		}
+
+		@media only screen and (max-width: 800px) {
+			flex-direction: column-reverse;
+		}
+	}
+
+	&__item {
+		width: calc(50% - 32px / 2);
+		border-radius: 16px;
+		display: flex;
+		flex-direction: column;
+		padding: 60px 40px;
+		background-color: #18191F14;
+
+		@media only screen and (max-width: 1400px) {
+			width: calc(50% - 20px / 2);
+			padding: 30px 20px;
+
+			@media only screen and (max-width: 800px) {
+				width: 100%;
+				padding: 20px 10px;
+			}
+		}
+
+		& h2 {
+			font-size: 42px;
+			font-weight: 600;
+			line-height: 53.55px;
+			text-align: left;
+			text-transform: uppercase;
+			margin-bottom: auto;
+			text-align: center;
+
+			@media only screen and (max-width: 1400px) {
+				font-size: 32px;
+				line-height: 43.55px;
+			}
+
+			@media only screen and (max-width: 900px) {
+				font-size: 24px;
+				line-height: 33.55px;
+			}
+		}
+
+		& address {
+			font-style: normal;
+			font-size: 32px;
+			font-weight: 300;
+			line-height: 48px;
+			text-align: left;
+			display: flex;
+			gap: 1rem;
+			align-items: flex-start;
+			color: #18191F;
+
+			@media only screen and (max-width: 1200px) {
+				font-size: 22px;
+				line-height: 32px;
+			}
+
+			& img {
+				width: 26px;
+				height: 35px;
+			}
+		}
+
+		& a[href^="tel:"] {
+			font-size: 32px;
+			font-weight: 700;
+			line-height: 40.8px;
+			text-align: left;
+			color: #393939;
+			display: flex;
+			gap: 1rem;
+			align-items: center;
+
+			& img {
+				width: 30px;
+				height: 29px;
+			}
+
+			@media only screen and (max-width: 1200px) {
+				font-size: 28px;
+				font-weight: 600;
+				line-height: 30.8px;
+			}
+		}
+
+		& a[href^="mailto:"] {
+			font-size: 32px;
+			font-weight: 500;
+			line-height: 40.8px;
+			text-align: left;
+			text-decoration: underline;
+			color: #CC423F;
+			display: flex;
+			gap: 1rem;
+			align-items: center;
+
+			& img {
+				width: 30px;
+				height: 22px;
+			}
+
+			@media only screen and (max-width: 1200px) {
+				font-weight: 400;
+				font-size: 22px;
+				line-height: 30.8px;
+			}
+		}
+
+		& form {
+			margin-top: 42px;
+
+			.form__group {
+				display: flex;
+				gap: 12px;
+
+				@media only screen and (max-width: 1200px) {
+					flex-direction: column;
+				}
+			}
+
+			& textarea {
+				width: 100%;
+				border: none;
+				border-bottom: 1px solid #fff;
+				padding: 24px;
+				border-radius: 8px;
+				font-size: 20px;
+				font-weight: 400;
+				line-height: 25.5px;
+				text-align: left;
+				color: #18191F;
+				background-color: #fff;
+				resize: none;
+				height: 200px;
+
+				@media only screen and (max-width: 1200px) {
+					height: 120px;
+					padding: 16px;
+				}
+			}
+
+			& input {
+				@media only screen and (max-width: 1200px) {
+					padding: 16px;
+				}
+			}
+
+			::placeholder {
+				color: #18191F52;
+			}
+			::-webkit-input-placeholder {
+				color: #18191F52;
+			}
+			:-moz-placeholder {
+				color: #18191F52;
+			}
+			::-moz-placeholder {
+				color: #18191F52;
+			}
+			:-ms-input-placeholder {
+				color: #18191F52;
+			}
+			::-ms-input-placeholder {
+				color: #18191F52;
+			}
+		}
+
+		& a {
+			transition: opacity .3s;
+			margin-top: 4rem;
+
+			@media only screen and (max-width: 1200px) {
+				margin-top: 2rem;
+			}
+
+			@media (hover: hover) {
+				&:hover {
+					opacity: .8;
+				}
+			}
+		}
+
+		&--full {
+			width: 100%;
+		}
+	}
+
+	&__time {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		font-size: 32px;
+		font-weight: 400;
+		line-height: 40.8px;
+		text-align: left;
+		color: #393939A3;
+		margin-top: 4rem;
+
+		@media only screen and (max-width: 1200px) {
+			margin-top: 2rem;
+		}
+
+		@media only screen and (max-width: 900px) {
+			font-size: 22px;
+			line-height: 32px;
+		}
+
+		& img {
+			width: 30px;
+			height: 30px;
+			animation: rotate 11s linear infinite;
+		}
+	}
+
+	&__form {
+		background-color: #18191F;
+		color: #fff;
+	}
+}
+
+@keyframes rotate {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}

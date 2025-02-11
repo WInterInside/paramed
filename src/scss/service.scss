@@ -1,0 +1,114 @@
+.service {
+	margin-bottom: 96px;
+
+	@media only screen and (max-width: 1300px) {
+		margin-bottom: 36px;
+	}
+
+	&__wrapper {
+		display: flex;
+		gap: 64px;
+
+		@media only screen and (max-width: 1500px) {
+			gap: 24px;
+		}
+
+		@media only screen and (max-width: 1300px) {
+			flex-direction: column;
+		}
+	}
+
+	&__preview {
+		width: calc(40% - 64px / 2);
+		min-height: 450px;
+		align-self: stretch;
+		position: relative;
+		overflow: hidden;
+		border-radius: 16px;
+
+		& img {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			inset: 0;
+			object-fit: cover;
+			object-position: center center;
+
+			@media only screen and (max-width: 1300px) {
+				object-position: bottom center;
+			}
+		}
+
+		@media only screen and (max-width: 1300px) {
+			display: none;
+		}
+	}
+
+	&__content {
+		width: calc(70% - 64px / 2);
+
+		& h2 {
+			font-size: 42px;
+			font-weight: 600;
+			line-height: 53.55px;
+			text-align: left;
+			text-transform: uppercase;
+
+			@media only screen and (max-width: 1300px) {
+				font-size: 32px;
+				line-height: 43.55px;
+			}
+		}
+
+		& p {
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 27px;
+			text-align: left;
+		}
+
+		@media only screen and (max-width: 1300px) {
+			width: 100%;
+		}
+	}
+
+	&__cards {
+		display: flex;
+		margin-top: 42px;
+		gap: 12px;
+
+		@media only screen and (max-width: 800px) {
+			flex-direction: column;
+			margin-top: 24px;
+		}
+
+		& img {
+			width: 42px;
+			height: 42px;
+		}
+
+		& div {
+			width: calc(33.333% - 16px / 2);
+			background-color: #EDEDED;
+			padding: 24px;
+			border-radius: 16px;
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
+
+			@media only screen and (max-width: 800px) {
+				width: 100%;
+				flex-direction: row;
+				align-items: center;
+			}
+		}
+
+		& p {
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 27px;
+			text-align: left;
+			margin: 0;
+		}
+	}
+}

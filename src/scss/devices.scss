@@ -1,0 +1,150 @@
+.devices {
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__wrapper {
+		display: flex;
+		gap: 64px;
+
+		@media only screen and (max-width: 1500px) {
+			gap: 34px;
+		}
+
+		@media only screen and (max-width: 1000px) {
+			flex-direction: column;
+			gap: 24px;
+		}
+	}
+
+	&__item {
+		padding: 64px 0;
+
+		& h2 {
+			font-size: 42px;
+			font-weight: 600;
+			line-height: 53.55px;
+			text-align: left;
+			text-transform: uppercase;
+
+			@media only screen and (max-width: 1000px) {
+				text-align: center;
+				font-size: 26px;
+				font-weight: 500;
+				line-height: 33.55px;
+				margin: 2rem 0;
+			}
+		}
+
+		& ul {
+			padding-left: 1rem;
+		}
+
+		& li {
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 27px;
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__preview {
+		position: relative;
+		width: calc(36% - 64px / 2);
+		height: 550px;
+		border: 1px solid #18191F29;
+		border-radius: 16px;
+		overflow: hidden;
+
+		@media only screen and (max-width: 1500px) {
+			height: 450px;
+		}
+
+		@media only screen and (max-width: 1000px) {
+			width: 100%;
+			height: 350px;
+		}
+
+		& img {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			inset: 0;
+			padding: 35px 50px 0 50px;
+			object-fit: contain;
+
+			@media only screen and (max-width: 1500px) {
+				padding: 16px 20px 0 20px;
+			}
+		}
+
+	}
+
+	&__content {
+		width: calc(64% - 64px / 2);
+
+		@media only screen and (max-width: 1000px) {
+			width: 100%;
+		}
+	}
+
+	details {
+		overflow: hidden; /* Скрываем избыточное содержимое */
+		padding: 24px;
+		padding-left: 0;
+		background-color: #FFFFFFA3;
+
+		&:last-child {
+			border-top: 2px solid #18191F29;
+			border-bottom: 2px solid #18191F29;
+		}
+
+		@media only screen and (max-width: 1200px) {
+			padding: 16px;
+		}
+
+		& > div {
+			padding: 24px 40px;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 27px;
+			text-align: left;
+
+			@media only screen and (max-width: 1200px) {
+				padding: 16px 0;
+			}
+		}
+	}
+
+	summary {
+		display: flex;
+		justify-content: flex-start;
+		cursor: pointer;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 36px;
+		text-align: left;
+		list-style: none; /* Убрать маркеры */
+	}
+
+	summary::-webkit-details-marker {
+		display: none; /* Скрыть стандартный маркер */
+	}
+
+	summary::before {
+		content: '+'; /* Добавить знак + */
+		color: #CC423F;
+		font-size: 30px;
+		margin-right: 24px;
+
+		@media only screen and (max-width: 1200px) {
+			font-size: 24px;
+			margin-right: 14px;
+		}
+	}
+
+	details[open] summary::before {
+		content: '-'; /* Изменить на знак - при открытии */
+	}
+}

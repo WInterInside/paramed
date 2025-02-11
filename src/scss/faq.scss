@@ -1,0 +1,106 @@
+.faq {
+	padding: 62px 42px;
+	background-color: #18191F14;
+	border-radius: 16px;
+
+	@media only screen and (max-width: 1300px) {
+		padding: 24px;
+	}
+
+	&__caption {
+		font-size: 42px;
+		font-weight: 600;
+		line-height: 53.55px;
+		text-align: left;
+		text-transform: uppercase;
+
+		@media only screen and (max-width: 1200px) {
+			font-size: 28px;
+			line-height: 36px;
+		}
+	}
+
+	&__subcaption {
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 30px;
+		text-align: left;
+		color: #18191FA3;
+	}
+
+	&__wrapper {
+		display: flex;
+		gap: 12px;
+		width: 100%;
+
+		@media only screen and (max-width: 900px) {
+			flex-direction: column;
+		}
+	}
+
+	&__content {
+		display: flex;
+		width: calc(50% - 12px / 2);
+		flex-direction: column;
+		gap: 12px;
+
+		@media only screen and (max-width: 900px) {
+			width: 100%;
+		}
+
+		details {
+			overflow: hidden; /* Скрываем избыточное содержимое */
+			padding: 24px;
+			background-color: #FFFFFFA3;
+			border-radius: 16px;
+
+			@media only screen and (max-width: 1200px) {
+				padding: 16px;
+			}
+
+			& > div {
+				padding: 24px 40px;
+				font-size: 18px;
+				font-weight: 300;
+				line-height: 27px;
+				text-align: left;
+
+				@media only screen and (max-width: 1200px) {
+					padding: 16px 0;
+				}
+			}
+		}
+
+		summary {
+			display: flex;
+			justify-content: flex-start;
+			cursor: pointer;
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 36px;
+			text-align: left;
+			list-style: none; /* Убрать маркеры */
+		}
+
+		summary::-webkit-details-marker {
+			display: none; /* Скрыть стандартный маркер */
+		}
+
+		summary::before {
+			content: '+'; /* Добавить знак + */
+			color: #CC423F;
+			font-size: 30px;
+			margin-right: 24px;
+
+			@media only screen and (max-width: 1200px) {
+				font-size: 24px;
+				margin-right: 14px;
+			}
+		}
+
+		details[open] summary::before {
+			content: '-'; /* Изменить на знак - при открытии */
+		}
+	}
+}
+

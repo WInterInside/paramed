@@ -1,0 +1,21 @@
+<svg width="1848" height="1008" viewBox="0 0 1848 1008" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_44_775" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="69" y="77" width="1718" height="853">
+<ellipse cx="928" cy="503.5" rx="859" ry="426.5" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_44_775)">
+<g opacity="0.16">
+<line x1="105" y1="1015" x2="105" y2="6.99695" stroke="white" stroke-dasharray="6 6"/>
+<line x1="367" y1="1015" x2="367" y2="6.99695" stroke="white" stroke-dasharray="6 6"/>
+<line x1="629" y1="1015" x2="629" y2="6.99695" stroke="white" stroke-dasharray="6 6"/>
+<line x1="891" y1="1015" x2="891" y2="6.99695" stroke="white" stroke-dasharray="6 6"/>
+<line x1="1153" y1="1015" x2="1153" y2="6.99695" stroke="white" stroke-dasharray="6 6"/>
+<line x1="1415" y1="1015" x2="1415" y2="6.99695" stroke="white" stroke-dasharray="6 6"/>
+<line x1="1677" y1="1015" x2="1677" y2="6.99695" stroke="white" stroke-dasharray="6 6"/>
+<line x1="-8" y1="214.568" x2="1848" y2="214.568" stroke="white" stroke-dasharray="6 6"/>
+<line x1="-8" y1="361.283" x2="1848" y2="361.283" stroke="white" stroke-dasharray="6 6"/>
+<line x1="-8" y1="507.997" x2="1848" y2="507.997" stroke="white" stroke-dasharray="6 6"/>
+<line x1="-8" y1="654.711" x2="1848" y2="654.711" stroke="white" stroke-dasharray="6 6"/>
+<line x1="-8" y1="801.426" x2="1848" y2="801.426" stroke="white" stroke-dasharray="6 6"/>
+</g>
+</g>
+</svg>
