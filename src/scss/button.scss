@@ -8,14 +8,14 @@
 	text-decoration: none;
 	transition: background-color .3s, opacity .3s, box-shadow .3s;
 
-	font-family: Onest;
+	
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 22.95px;
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
 	color: #fff;
-	background-color: #CC423F;
+	background-color: #de0000;
 
 	padding: 24px 16px;
 	border-radius: 8px;
@@ -36,7 +36,7 @@
 
 	&--lg {
 		min-width: 420px;
-		font-family: Onest;
+		
 		font-size: 24px;
 		font-weight: 800;
 		line-height: 30.6px;
