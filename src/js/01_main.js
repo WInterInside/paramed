@@ -346,7 +346,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function () {
-	var $slider = $('.docs__slider');
+	var $slider = $('.reviews__slider');
 
 	// Инициализация слайдера
 	$slider.slick({
