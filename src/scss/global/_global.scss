@@ -27,6 +27,21 @@ body {
 	}
 }
 
+h2 {
+	font-size: 48px;
+	line-height: 48px;
+
+	@media only screen and (max-width: 1200px) {
+		font-size: 38px;
+		line-height: 38px;
+	}
+
+	@media only screen and (max-width: 800px) {
+		font-size: 28px;
+		line-height: 28px;
+	}
+}
+
 .wrapper {
 	display: flex;
 	flex-flow: column nowrap;
@@ -41,7 +56,7 @@ body {
 
 .container {
 	width: 100%;
-	max-width: 1920px;
+	max-width: 1440px;
 	margin: 0 auto;
 	padding: 0 32px;
 

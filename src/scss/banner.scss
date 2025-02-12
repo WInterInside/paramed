@@ -1,0 +1,48 @@
+.banner {
+	background-image: url("../img/noroot.png");
+	background-size: contain;
+	background-repeat: repeat;
+	background-position: top center;
+	padding: 30px 0;
+	margin: 30px 0;
+
+	text-align: center;
+
+	& h2 {
+		font-size: 34px;
+
+		@media only screen and (max-width: 900px) {
+			font-size: 24px;
+		}
+	}
+
+	&__link {
+		margin: 0 auto;
+		margin-top: 32px;
+		transform: translateX(-25px);
+		display: flex;
+		width: max-content;
+		align-items: center;
+		gap: 10px;
+		font-size: 16px;
+		font-weight: 600;
+
+		& span {
+			padding: 12px;
+			background-color: #de0000;
+			border: 1px solid #de0000;
+			color: #fff;
+			border-radius: 8px;
+			transition: background-color .3s, color .3s;
+		}
+
+		@media (hover: hover) {
+			&:hover {
+				& span {
+					color: #de0000;
+					background-color: #fff;
+				}
+			}
+		}
+	}
+}
