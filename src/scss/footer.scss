@@ -7,12 +7,96 @@
 	color: #fff;
 	width: 100%;
 
+	.header__social-icon {
+		display: flex;
+		flex-shrink: 0;
+		width: 30px;
+		height: 30px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.header__social-links {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.header__callback {
+		text-align: center;
+		font-size: 15px;
+		border-bottom: 2px dashed red;
+		cursor: pointer;
+	}
+
+	.header__contacts {
+		width: max-content;
+
+		&:last-child {
+			margin-left: 0;
+			flex-direction: column-reverse;
+		}
+
+		@media only screen and (max-width: 1350px) {
+			&:last-child {
+				display: flex;
+			}
+		}
+
+		@media only screen and (max-width: 1000px) {
+			display: flex;
+			margin: 0;
+			width: max-content;
+
+			&:last-child {
+				display: flex;
+				margin: 0;
+			}
+		}
+
+		& a {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			transition: color .3s;
+			text-align: right;
+			color: #fff;
+
+			@media only screen and (max-width: 700px) {
+				font-size: 12px;
+			}
+		}
+
+		& span {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			text-transform: uppercase;
+
+			@media only screen and (max-width: 700px) {
+				font-size: 12px;
+			}
+		}
+
+		@media (hover: hover) {
+			& a:hover  {
+				color: #de0000;
+			}
+		}
+	}
+
+	.header__icon {
+		@media only screen and (max-width: 700px) {
+			width: 30px;
+			height: 30px;
+		}
+	}
+
 	&__up {
 		position: absolute;
 		bottom: 20px;
-		right: 20px;
-		width: 40px;
-		height: 40px;
+		right: 10px;
+		width: 30px;
+		height: 30px;
 		border-radius: 50%;
 		background-color: #de0000;
 		transition: background-color .3s;
@@ -30,9 +114,9 @@
 		font-size: 24px;
 		font-weight: 600;
 		line-height: 30.6px;
-		color: #de0000;
+		color: #fff;
 		text-transform: uppercase;
-		margin-bottom: 24px;
+		margin-bottom: 10px;
 
 		@media only screen and (max-width: 600px) {
 			font-size: 14px;
@@ -42,12 +126,7 @@
 
 	&__logo {
 		@media only screen and (max-width: 1300px) {
-			margin: 0 auto;
-		}
-
-		@media only screen and (max-width: 600px) {
-			height: 69px;
-			width: 62px;
+			// margin: 0 auto;
 		}
 	}
 
@@ -71,14 +150,14 @@
 		margin: 0;
 		display: flex;
 		flex-direction: column;
-		gap: 36px;
+		gap: 10px;
 
 		& a {
 			font-size: 20px;
-			font-weight: 500;
-			line-height: 25.5px;
-			color: #393939;
+			line-height: 25px;
+			color: #fff;
 			transition: color .3s;
+			opacity: .6;
 
 			@media (hover: hover) {
 				&:hover {
@@ -107,7 +186,7 @@
 		font-size: 20px;
 		font-weight: 400;
 		line-height: 25.5px;
-		color: #393939A3;
+		color: #fff;
 
 		@media only screen and (max-width: 769px) {
 			font-size: 12px;
@@ -116,11 +195,10 @@
 	}
 
 	&__tel {
-		
 		font-size: 32px;
 		font-weight: 700;
 		line-height: 40.8px;
-		color: #393939;
+		color: #fff;
 		transition: color .3s;
 
 		@media (hover: hover) {
@@ -146,7 +224,7 @@
 		font-size: 20px;
 		font-weight: 500;
 		line-height: 25.5px;
-		color: #de0000;
+		color: #fff;
 		text-decoration: underline;
 		transition: color .3s;
 
@@ -169,13 +247,13 @@
 		margin: 0;
 		display: flex;
 		flex-direction: column;
-		gap: 36px;
+		gap: 10px;
 
 		& a {
 			font-size: 20px;
 			font-weight: 500;
 			line-height: 25.5px;
-			color: #393939;
+			color: #fff;
 			transition: color .3s;
 
 			@media (hover: hover) {
@@ -200,8 +278,8 @@
 
 	&__columns {
 		display: flex;
-		justify-content: space-between;
-		padding: 0 60px;
+		justify-content: center;
+		gap: 40px;
 
 		@media only screen and (max-width: 1600px) {
 			padding: 0;
@@ -220,7 +298,8 @@
 	&__column {
 		display: flex;
 		flex-direction: column;
-
+		justify-content: center;
+		
 		&--info {
 			align-items: center;
 			gap: 24px;
@@ -247,7 +326,7 @@
 		@media only screen and (max-width: 1300px) {
 			display: flex;
 			flex-direction: column;
-			justify-content: space-between;
+			// justify-content: space-between;
 			gap: 32px;
 		}
 	}
