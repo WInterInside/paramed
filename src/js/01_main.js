@@ -350,10 +350,10 @@ $(document).ready(function () {
 
 	// Инициализация слайдера
 	$slider.slick({
-		dots: false,
+		dots: true,
 		infinite: true,
 		speed: 500,
-		slidesToShow: 5,
+		slidesToShow: 3,
 		arrows: false, // Отключаем встроенные стрелки Slick Slider
 		centerMode: true, // Центрирование слайдов
 		variableWidth: true, // Разрешаем разные ширины слайдов

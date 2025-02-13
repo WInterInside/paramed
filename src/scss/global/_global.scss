@@ -20,7 +20,7 @@ body {
 	font-weight: 500;
 	font-style: normal;
 	font-size: 14px;
-	line-height: 22px;
+	line-height: 1.4;
 
 	&.is-popup-open {
 		overflow: hidden;
@@ -39,6 +39,21 @@ h2 {
 	@media only screen and (max-width: 800px) {
 		font-size: 28px;
 		line-height: 28px;
+	}
+}
+
+.all {
+	display: inline-block;
+	color: #dd9933;
+	padding-top: 6px;
+	border-top: 2px solid #000;
+	margin: 20px 0;
+	font-size: 20px;
+
+	@media (hover: hover) {
+		&:hover {
+			color: #de0000;
+		}
 	}
 }
 

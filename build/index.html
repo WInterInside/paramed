@@ -23,6 +23,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	
 	<!-- <link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" /> -->
@@ -84,9 +86,9 @@
 								</i>
 							</a>
 						</div>
-						<a class="header__callback">
+						<!-- <a class="header__callback">
 							Заказать звонок
-						</a>
+						</a> -->
 					</div>
 
 					<div class="header__contacts">
@@ -365,164 +367,400 @@
 				</div>
 			</section>
 
-
-			<div class="container">
-				<section class="reviews">
+			<section class="reviews-section">
+				<div class="container">
 					<h2>
 						Отзывы о нашей службе
 					</h2>
-					<li><a href="#callback" class="fancybox">Оставить заявку</a></li>
 					<a href="" class="all">
 						Читать все отзывы
 					</a>
-
-					<div class="reviews__slider">
-						<a target="_blank" href="#callback" class="fancybox">
-							вагина
-						</a>
-						<a target="_blank" href="#callback" class="fancybox">
-							пенис
-						</a>
-						<a target="_blank" href="#callback" class="fancybox">
-							хер
-						</a>
-						<a target="_blank" href="#callback" class="fancybox">
-							давалка
-						</a>
-						<a target="_blank" href="#callback" class="fancybox">
-							вагина
-						</a>
-						<a target="_blank" href="#callback" class="fancybox">
-							пенис
-						</a>
-						<a target="_blank" href="#callback" class="fancybox">
-							хер
-						</a>
-						<a target="_blank" href="#callback" class="fancybox">
-							давалка
-						</a>
-					</div>
-
-
-					<div class="reviews__controls">
-						<button class="prev">
-							<img src="img/slider-control.svg" alt="">
-						</button>
-
-						<button class="next">
-							<img src="img/slider-control.svg" alt="">
-						</button>
-					</div>
-				</section>
-			</div>
-
-
-
-
-			<div class="container">
-
-
-
-				<section class="map">
-					<div class="map__caption">
-						<h2>
-							Как начать с нами сотрудничество?
-						</h2>
-					</div>
-					<div class="map__content map__content--steps">
-						<div class="map__step">
-							<div class="map__step-heading">
-								<span>
-									01
-									<span class="map__step-icon map__step-icon--first">
-										<img src="img/step-icon-1.svg" alt="">
-									</span>
-								</span>
-								<h2>
-									оставьте заявку
-								</h2>
-								<p>
-									Мы проведем консультацию, оценим ситуацию, определим сроки и стоимость работ.
-								</p>
-							</div>
-							<form>
-								<input class="form__input form__input--tel" type="text" name="tel" required="" placeholder="+7 (ХХХ) ХХХ ХХ ХХ" maxlength="18">
-
-								<button class="button form__button" type="submit">
-									Отправить заявку
-								</button>
-
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" class="required" />
-										<span>
-											Нажимая на кнопку «Оставить заявку», вы даете согласие на обработку персональных данных
-										</span>
-									</label>
+					<section class="reviews">
+						<div class="reviews__slider">
+							<div>
+								<div class="review">
+									<header>
+										<div class="review__photo">
+											<img src="img/review.jpg" alt="">
+										</div>
+										<div class="review__info">
+											<h3>
+												Ирина Анатольева
+											</h3>
+											<div>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+											</div>
+										</div>
+									</header>
+									<p>
+										Вчера вызывала скорую помощь на дом.
+										Нет предела словам благодарности в адрес работников ПарамедикСочи!
+										Глубокие знания, большая компентентность, высокая культура,
+										очень большое внимание оказанное мне! Спасибо!
+									</p>
+									<a target="_blank" href="#review" class="fancybox">
+										Подробнее
+									</a>
 								</div>
-							</form>
+							</div>
+							<div>
+								<div class="review">
+									<header>
+										<div class="review__photo">
+											<img src="img/review.jpg" alt="">
+										</div>
+										<div class="review__info">
+											<h3>
+												Ирина Анатольева
+											</h3>
+											<div>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+											</div>
+										</div>
+									</header>
+									<p>
+										Вчера вызывала скорую помощь на дом.
+										Нет предела словам благодарности в адрес работников ПарамедикСочи!
+										Глубокие знания, большая компентентность, высокая культура,
+										очень большое внимание оказанное мне! Спасибо!
+									</p>
+									<a target="_blank" href="#review" class="fancybox">
+										Подробнее
+									</a>
+								</div>
+							</div>
+							<div>
+								<div class="review">
+									<header>
+										<div class="review__photo">
+											<img src="img/review.jpg" alt="">
+										</div>
+										<div class="review__info">
+											<h3>
+												Ирина Анатольева
+											</h3>
+											<div>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+											</div>
+										</div>
+									</header>
+									<p>
+										Вчера вызывала скорую помощь на дом.
+										Нет предела словам благодарности в адрес работников ПарамедикСочи!
+										Глубокие знания, большая компентентность, высокая культура,
+										очень большое внимание оказанное мне! Спасибо!
+									</p>
+									<a target="_blank" href="#review" class="fancybox">
+										Подробнее
+									</a>
+								</div>
+							</div>
+							<div>
+								<div class="review">
+									<header>
+										<div class="review__photo">
+											<img src="img/review.jpg" alt="">
+										</div>
+										<div class="review__info">
+											<h3>
+												Ирина Анатольева
+											</h3>
+											<div>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+											</div>
+										</div>
+									</header>
+									<p>
+										Вчера вызывала скорую помощь на дом.
+										Нет предела словам благодарности в адрес работников ПарамедикСочи!
+										Глубокие знания, большая компентентность, высокая культура,
+										очень большое внимание оказанное мне! Спасибо!
+									</p>
+									<a target="_blank" href="#review" class="fancybox">
+										Подробнее
+									</a>
+								</div>
+							</div>
+							<div>
+								<div class="review">
+									<header>
+										<div class="review__photo">
+											<img src="img/review.jpg" alt="">
+										</div>
+										<div class="review__info">
+											<h3>
+												Ирина Анатольева
+											</h3>
+											<div>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+											</div>
+										</div>
+									</header>
+									<p>
+										Вчера вызывала скорую помощь на дом.
+										Нет предела словам благодарности в адрес работников ПарамедикСочи!
+										Глубокие знания, большая компентентность, высокая культура,
+										очень большое внимание оказанное мне! Спасибо!
+									</p>
+									<a target="_blank" href="#review" class="fancybox">
+										Подробнее
+									</a>
+								</div>
+							</div>
+							<div>
+								<div class="review">
+									<header>
+										<div class="review__photo">
+											<img src="img/review.jpg" alt="">
+										</div>
+										<div class="review__info">
+											<h3>
+												Ирина Анатольева
+											</h3>
+											<div>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+											</div>
+										</div>
+									</header>
+									<p>
+										Вчера вызывала скорую помощь на дом.
+										Нет предела словам благодарности в адрес работников ПарамедикСочи!
+										Глубокие знания, большая компентентность, высокая культура,
+										очень большое внимание оказанное мне! Спасибо!
+									</p>
+									<a target="_blank" href="#review" class="fancybox">
+										Подробнее
+									</a>
+								</div>
+							</div>
+							<div>
+								<div class="review">
+									<header>
+										<div class="review__photo">
+											<img src="img/review.jpg" alt="">
+										</div>
+										<div class="review__info">
+											<h3>
+												Ирина Анатольева
+											</h3>
+											<div>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+											</div>
+										</div>
+									</header>
+									<p>
+										Вчера вызывала скорую помощь на дом.
+										Нет предела словам благодарности в адрес работников ПарамедикСочи!
+										Глубокие знания, большая компентентность, высокая культура,
+										очень большое внимание оказанное мне! Спасибо!
+									</p>
+									<a target="_blank" href="#review" class="fancybox">
+										Подробнее
+									</a>
+								</div>
+							</div>
 						</div>
 
-						<img class="map__steps" src="img/steps.svg" alt="">
+						<div class="reviews__controls">
+							<button class="prev">
+								<img src="img/slider-control.svg" alt="">
+							</button>
 
-						<div class="map__steps-mobile">
-							<div class="map__step">
-								<div class="map__step-heading">
+							<button class="next">
+								<img src="img/slider-control.svg" alt="">
+							</button>
+						</div>
+					</section>
+				</div>
+			</section>
+
+			<section class="review-form">
+				<div class="container">
+					<div class="review-form__wrapper">
+						<div class="review-form__content">
+							<div class="review-form__links">
+								<a href="https://goo.gl/maps/oaenRcG4q8b7Vb2y9" target="_blank" rel="nofollow">
+									<i class="fa-brands fa-google"></i>
 									<span>
-										02
-										<span class="map__step-icon">
-											<img src="img/step-icon-2.svg" alt="">
-										</span>
+										Оставить отзыв в Google
 									</span>
-									<h2>
-										Разведка местности
-									</h2>
-									<p>
-										Мы выполняем тщательное обследование территории, выявляя минные поля,
-										взрывоопасные предметы и другие угрозы,
-										чтобы составить точный план для безопасной очистки.
-									</p>
-								</div>
+
+								</a>
+								<a href="https://yandex.ru/profile/235828293470?intent=reviews&amp;utm_source=qr&amp;utm_medium=vizitka&amp;utm_campaign=v1" target="_blank" rel="nofollow">
+									<i class="fa-brands fa-yandex"></i>
+									<span>
+										Оставить отзыв в Яндекс
+									</span>
+								</a>
 							</div>
-							<div class="map__step">
-								<div class="map__step-heading">
-									<span>
-										03
-										<span class="map__step-icon">
-											<img src="img/step-icon-3.svg" alt="">
-										</span>
-									</span>
-									<h2>
-										Очистка местности
-									</h2>
-									<p>
-										На этом этапе мы проводим разминирование,
-										обезвреживаем и безопасно удаляем все взрывоопасные объекты.
-									</p>
-								</div>
-							</div>
-							<div class="map__step">
-								<div class="map__step-heading">
-									<span>
-										04
-										<span class="map__step-icon">
-											<img src="img/step-icon-4.svg" alt="">
-										</span>
-									</span>
-									<h2>
-										Документы о завершении работ
-									</h2>
-									<p>
-										После завершения работ мы подготовим акт о выполненных работах
-										и технический отчет в соответствии с ГОСТ 21.301-2021,
-										подтверждающий, что территория полностью очищена и безопасна.
-									</p>
-								</div>
+
+							<div class="review-form__img">
+								<img src="img/rewievs-2.jpg" alt="">
 							</div>
 						</div>
+
+						<form>
+							<h2>Оставить отзыв</h2>
+							<input class="form__input" type="text" name="name" required="" placeholder="ваше имя">
+
+							<textarea name="review" placeholder="ваш отзыв"></textarea>
+
+							<button class="button form__button" type="submit">
+								Отправить
+							</button>
+
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" class="required" />
+									<span>
+										Согласие на обработку персональных данных
+									</span>
+								</label>
+							</div>
+						</form>
+
 					</div>
-				</section>
-			</div>
+				</div>
+			</section>
+
+			<section class="contacts">
+				<div class="container">
+					<h2>
+						Контакты и лицензии
+					</h2>
+
+					<div class="contacts__wrapper">
+						<div class="contacts__item">
+							<span>Телефон:</span>
+							
+							<a href="tel:+79628850303">
+								+7(962) 885-03-03
+							</a>
+
+							<span>Юридический адрес:</span>
+
+							<address>
+								354000 Краснодарский край, г. Сочи, улица Северная, д. 16, кв./оф. 10
+							</address>
+
+							<span>Место осуществления медицинской деятельности:</span>
+
+							<address>
+								354375, Краснодарский край, г. Сочи, Адлерский район, ул. Веселая, 71, помещения №№ 102, 105, 135, 136, 138, 139
+							</address>
+
+							<span>Email:</span>
+							
+							<a href="mailto:paramedicsochi@yandex.ru">paramedicsochi@yandex.ru</a>
+
+							<h3>
+								ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ПАРАМЕДИКСОЧИ"
+							</h3>
+
+							<span>ИНН: 2366018571</span>
+							<span>КПП: 236601001</span>
+							<span>ОГРН 1202300002431</span>
+
+						</div>
+						<a target="_blank" href="img/doc.jpg" class="contacts__item">
+							<img src="img/doc.jpg" alt="">
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="articles">
+				<div class="container">
+					<h2>
+						Полезные статьи
+					</h2>
+					<a href="" class="all">
+						Читать все новости
+					</a>
+					<div class="articles__wrapper">
+						<a class="articles__item">
+							<div class="articles__preview">
+								<img src="img/1801128862-300x300.jpg" alt="">
+							</div>
+							<span>08.04.2024</span>
+							<h3>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis temporibus iusto deserunt necessitatibus harum minima repellendus labore nisi. Necessitatibus harum veritatis veniam ipsum cupiditate eum mollitia illo, voluptatibus similique velit.
+							</h3>
+							<span>Подробнее</span>
+						</a>
+						<a class="articles__item">
+							<div class="articles__preview">
+								<img src="img/1801128862-300x300.jpg" alt="">
+							</div>
+							<span>08.04.2024</span>
+							<h3>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis temporibus iusto deserunt necessitatibus harum minima repellendus labore nisi. Necessitatibus harum veritatis veniam ipsum cupiditate eum mollitia illo, voluptatibus similique velit.
+							</h3>
+							<span>Подробнее</span>
+						</a>
+						<a class="articles__item">
+							<div class="articles__preview">
+								<img src="img/1801128862-300x300.jpg" alt="">
+							</div>
+							<span>08.04.2024</span>
+							<h3>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis temporibus iusto deserunt necessitatibus harum minima repellendus labore nisi. Necessitatibus harum veritatis veniam ipsum cupiditate eum mollitia illo, voluptatibus similique velit.
+							</h3>
+							<span>Подробнее</span>
+						</a>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="order">
+				<div class="container">
+					<div class="order__header">
+						<h3>
+							Порядок и условия оказания медицинской помощи на 2023 год
+						</h3>
+						<a href="">
+							Скачать документ
+						</a>
+					</div>
+
+					<div class="order__content">
+						<span>Медицинскую помощь в рамках госпрограммы ОМС</span>
+						<span>Вы можете получить в <a target="_blank" href="">ГБУЗ ССМП</a> г. Сочи по адресу: ул. Гагарина 21.</span>
+						<span>Телефон: <a href="tel:+78622544098">+7 (862) 254-40-98</a> или <a href="tel:103">103</a></span>
+						<span>Росздравнадзор: <a href="tel:+78612753900">+7 (861) 275-39-00</a></span>
+						<span>Роспотребнадзор: <a href="tel:+78612262074">+7 (861) 226 20 74</a></span>
+					</div>
+				</div>
+			</section>
 
 		</main>
 
@@ -653,9 +891,9 @@
 										</i>
 									</a>
 								</div>
-								<a class="header__callback">
+								<!-- <a class="header__callback">
 									Заказать звонок
-								</a>
+								</a> -->
 							</div>
 						</div>
 					</div>
@@ -683,23 +921,47 @@
 
 <div id="callback" class="modal">
 	<div class="contacts__form contacts__item contacts__item--full">
-		<h2>
-			напишите нам
-		</h2>
 		<form>
-			<input type="text" name="name" placeholder="Ваше имя или название организации">
+			<input type="text" name="name" placeholder="Ваше имя">
 
 			<div class="form__group">
 				<input class="form__input form__input--tel" type="text" name="tel" required="" placeholder="+7 (ХХХ) ХХХ ХХ ХХ" maxlength="18">
-				<input class="form__input form__input--mail" type="email" name="mail" required="" placeholder="E-mail">
 			</div>
 
-			<textarea name="message" placeholder="Ваше сообщение..."></textarea>
+			<textarea name="message" placeholder="Причина вызова"></textarea>
 
 			<button class="button form__button" type="submit">
 				Отправить заявку
 			</button>
 		</form>
+	</div>
+</div>
+
+<div id="review" class="modal">
+	<div class="review review--review">
+		<header>
+			<div class="review__photo">
+				<img src="img/review.jpg" alt="">
+			</div>
+			<div class="review__info">
+				<h3>
+					Ирина Анатольева
+				</h3>
+				<div>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+				</div>
+			</div>
+		</header>
+		<p>
+			Вчера вызывала скорую помощь на дом.
+			Нет предела словам благодарности в адрес работников ПарамедикСочи!
+			Глубокие знания, большая компентентность, высокая культура,
+			очень большое внимание оказанное мне! Спасибо!
+		</p>
 	</div>
 </div>
 
