@@ -3752,6 +3752,110 @@ body .fancybox-content {
     opacity: 0.7;
   }
 }
+.spec {
+  padding: 40px 0;
+  margin-top: 132px;
+  margin-bottom: 32px;
+}
+@media only screen and (max-width: 1200px) {
+  .spec {
+    margin-top: 98px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .spec {
+    margin-top: 70px;
+  }
+}
+.spec__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  margin: 30px 0;
+}
+.spec__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  color: #000;
+}
+.spec__item p {
+  color: rgb(36, 36, 36);
+  opacity: 0.6;
+}
+@media only screen and (max-width: 900px) {
+  .spec__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (hover: hover) {
+  .spec__item:hover .spec__content span {
+    color: #fff;
+    background-color: #de0000;
+  }
+}
+.spec__img {
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 340px;
+  height: 340px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 900px) {
+  .spec__img {
+    width: 100%;
+  }
+}
+.spec__img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.spec__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.spec__content span {
+  font-weight: 600;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 16px 32px;
+  border: 2px solid #de0000;
+  color: #de0000;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+@media only screen and (max-width: 900px) {
+  .spec__content span {
+    width: 100%;
+    text-align: center;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
 ========================================================================== */
