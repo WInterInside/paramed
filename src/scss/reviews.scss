@@ -4,6 +4,55 @@
 	@media (max-width: 900px) {
 		margin: 32px 0;
 	}
+
+	&--page {
+		padding: 40px 0;
+		margin-top: 132px;
+		margin-bottom: 32px;
+
+		@media only screen and (max-width: 1200px) {
+			margin-top: 98px;
+		}
+
+		@media only screen and (max-width: 900px) {
+			margin-top: 70px;
+		}
+
+		.reviews {
+			padding: 0;
+			display: flex;
+			gap: 20px;
+			flex-wrap: wrap;
+
+			@media only screen and (max-width: 900px) {
+				gap: 10px;
+			}
+		}
+
+		.review {
+			height: auto;
+			box-shadow: none;
+			background-color: #F4F4F4;
+			border-radius: 30px;
+			width: calc(32% - 20px / 2);
+			flex-grow: 1;
+
+			@media only screen and (max-width: 900px) {
+				width: 100%;
+			}
+
+			& p {
+				overflow: visible;
+				-webkit-line-clamp: unset;
+			}
+			& header {
+				display: flex;
+				gap: 10px;
+				padding-bottom: 0;
+				border-bottom: none;
+			}
+		}
+	}
 }
 
 .reviews {
@@ -110,6 +159,7 @@
 
 	& div {
 		.fa-star {
+			margin-top: 10px;
 			color: #fabf35;
 		}
 	}
