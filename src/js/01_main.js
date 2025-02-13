@@ -147,10 +147,45 @@ $(document).ready(function () {
 });
 
 $(document).ready(function() {
-    $('.footer__up').on('click', function(event) {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: 0 // Прокручиваем до верха страницы
-        }, 500); // Время анимации в миллисекундах (здесь 500 мс)
-    });
+	$('.footer__up').on('click', function(event) {
+		event.preventDefault();
+		$('html, body').animate({
+			scrollTop: 0 // Прокручиваем до верха страницы
+		}, 500); // Время анимации в миллисекундах (здесь 500 мс)
+	});
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+	// Функция создания карты
+	function createMap(xID, coords) {
+		const mapContainer = document.getElementById(xID);
+		if (mapContainer) {
+			ymaps.ready(function() {
+				const myMap = new ymaps.Map(xID, {
+					center: coords,
+					zoom: 13,
+					controls: [],
+				});
+
+				const myPlacemark = new ymaps.Placemark(
+					coords,
+					{
+						hintContent: "г. Сочи улица Северная, д. 16",
+						balloonContent: "г. Сочи улица Северная, д. 16",
+					},
+					{
+						preset: "islands#redDotIcon", // Красный пин
+					}
+				);
+
+				myMap.geoObjects.add(myPlacemark);
+				myMap.behaviors.disable("scrollZoom");
+			});
+		} else {
+			console.error("Элемент с ID", xID, "не найден.");
+		}
+	}
+
+	// Вызов функции создания карты
+	createMap("contacts-page__map", [43.595573, 39.724697]);
 });
