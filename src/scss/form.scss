@@ -40,12 +40,18 @@ form {
 	.form__button {
 		width: 100%;
 		height: 74px;
+		@media only screen and (max-width: 900px) {
+			height: 54px;
+		}
 	}
 
 	& input {
 		width: 100%;
 		border: 2px solid rgb(199, 199, 199);
 		padding: 24px;
+		@media only screen and (max-width: 900px) {
+			height: 14px;
+		}
 		border-radius: 8px;
 		font-size: 20px;
 		font-weight: 400;
@@ -61,6 +67,9 @@ form {
 		resize: none;
 		border: 2px solid rgb(199, 199, 199);
 		padding: 24px;
+		@media only screen and (max-width: 900px) {
+			height: 14px;
+		}
 		border-radius: 8px;
 		font-size: 20px;
 		font-weight: 400;

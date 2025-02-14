@@ -1,24 +1,5 @@
 .faq {
-	padding: 62px 42px;
-	background-color: #18191F14;
-	border-radius: 16px;
-
-	@media only screen and (max-width: 1300px) {
-		padding: 24px;
-	}
-
-	&__caption {
-		font-size: 42px;
-		font-weight: 600;
-		line-height: 53.55px;
-		text-align: left;
-		text-transform: uppercase;
-
-		@media only screen and (max-width: 1200px) {
-			font-size: 28px;
-			line-height: 36px;
-		}
-	}
+	margin: 30px 0;
 
 	&__subcaption {
 		font-size: 20px;
@@ -30,6 +11,7 @@
 
 	&__wrapper {
 		display: flex;
+		flex-direction: column;
 		gap: 12px;
 		width: 100%;
 
@@ -40,7 +22,7 @@
 
 	&__content {
 		display: flex;
-		width: calc(50% - 12px / 2);
+		width: 100%;
 		flex-direction: column;
 		gap: 12px;
 
@@ -49,10 +31,10 @@
 		}
 
 		details {
+			box-shadow: 0 11.9104px 37.4328px rgb(148 143 143 / 25%);
 			overflow: hidden; /* Скрываем избыточное содержимое */
-			padding: 24px;
+			padding: 16px;
 			background-color: #FFFFFFA3;
-			border-radius: 16px;
 
 			@media only screen and (max-width: 1200px) {
 				padding: 16px;

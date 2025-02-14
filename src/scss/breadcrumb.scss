@@ -1,8 +1,11 @@
 .breadcrumbs {
 	display: flex;
-	position: relative;
+	position: absolute;
+	top: 0;
+	width: 100%;
 	z-index: 1;
-	margin-top: 13px;
+	padding: 2px;
+	background-color: #383838;
 
 	@media (max-width: 1000px) {
 		overflow-x: scroll;
@@ -17,7 +20,7 @@
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 18.2px;
-		color: #FFFFFFA3;
+		color: #dd9933;
 
 		@media (max-width: 700px) {
 			font-size: 10px;
@@ -44,7 +47,7 @@
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 18.2px;
-		color: #FFFFFF52;
+		color: #dd9933;
 
 		@media (max-width: 700px) {
 			font-size: 10px;
@@ -59,7 +62,7 @@
 	& ol li:last-child {
 		.breadcrumb_font_style {
 			margin-right: 10px;
-			color: #FFFFFF52;
+			color: #dd993383;
 		}
 	}
 
