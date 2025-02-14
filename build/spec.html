@@ -395,20 +395,35 @@
 </div>
 
 <div id="callback" class="modal">
-	<div class="contacts__form contacts__item contacts__item--full">
-		<form>
-			<input type="text" name="name" placeholder="Ваше имя">
+	<div class="callback">
+		<div class="callback__content">
+			<h2>
+				Оставить заявку
+			</h2>
 
-			<div class="form__group">
+			<span class="callback__notice">
+				Наш специалист перезвонит Вам и уточнит детали
+			</span>
+
+			<form>
+				<input class="form__input" type="text" name="name" required="" placeholder="ваше имя">
+
 				<input class="form__input form__input--tel" type="text" name="tel" required="" placeholder="+7 (ХХХ) ХХХ ХХ ХХ" maxlength="18">
-			</div>
 
-			<textarea name="message" placeholder="Причина вызова"></textarea>
+				<button class="button form__button" type="submit">
+					Отправить
+				</button>
 
-			<button class="button form__button" type="submit">
-				Отправить заявку
-			</button>
-		</form>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" class="required" />
+						<span>
+							Согласие на обработку персональных данных
+						</span>
+					</label>
+				</div>
+			</form>
+		</div>
 	</div>
 </div>
 

@@ -5,6 +5,12 @@
 		margin: 30px 0;
 	}
 
+	&__notice {
+		display: inline-block;
+		color: rgb(221, 221, 221);
+		margin: 20px 0;
+	}
+
 	&__wrapper {
 		display: flex;
 		gap: 60px;

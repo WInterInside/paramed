@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+	"lang":"ru",
+	"title":"Парамед | Специалисты | Отзыв",
+	"description":"",
+	"keywords":"",
+	"favicon":"img/favicons/favicon",
+})
+
+<body>
+	<div class="wrapper">
+
+		@@include('components/page-blocks/_header.html')
+
+		<main class="main">
+
+			<section class="spec">
+				<div class="container">
+					<h2>
+						Иванова Наталья Ивановна
+					</h2>
+
+					<div class="spec__list">
+						<div href="" class="spec__item">
+							<div class="spec__img">
+								<img src="img/spec.jpg" alt="">
+							</div>
+							<div class="spec__content">
+								<h3>
+									Фельдшер скорой помощи, общий стаж работы 20 лет
+								</h3>
+								<ul>
+									<li>
+										Удостоверение о повышении квалификации АНО ДПО МЦ «Развитие» №312601011319 рег. № 2156, дата выдачи 30 ноября 2019 г. «Скорая и неотложная помощь» г. Пятигорск.
+									</li>
+									<li>
+										Свидетельство АБ№408813 Медицинский колледж Новгородского государственного университета им. Ярослава Мудрого, рег. № 1021 «Медсестра кабинета ЭКГ» дата выдачи: 23 января 2001 г. г. Великий Новгород
+									</li>
+									<li>
+										Свидетельство о повышении квалификации, рег. № 11-с/д, «Новгородский областной центр последипломного образования», дата выдачи 30 апреля 2009 г. «Сестринская помощь детям», прошла стажировку в ММУ «Крестецкая ЦРБ» -216 часов. г. Великий Новгород
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="spec__articles">
+						<h3>
+							Авторские статьи
+						</h3>
+						<ol>
+							<li>
+								<a target="_blank" href="">Какие симптомы и заболевания требуют немедленной помощи врача-скорой помощи</a>
+							</li>
+							<li>
+								<a target="_blank" href="">Какие симптомы и заболевания требуют</a>
+							</li>
+						</ol>
+					</div>
+
+					<div class="page-controls">
+						<span>Предыдущая страница</span>
+
+						<a href="">
+							<i class="fa fa-angle-double-left" aria-hidden="true"></i>
+							Lorem ipsum dolor sit
+						</a>
+					</div>
+
+					<section class="review-form">
+
+
+						<div class="container">
+							<span class="review-form__notice">
+								Ваш адрес email не будет опубликован. Обязательные поля помечены *
+							</span>
+
+							<form>
+								<textarea name="review" placeholder="Комментарий *"></textarea>
+
+								<input class="form__input" type="text" name="name" required="" placeholder="Имя *">
+
+								<input class="form__input" type="text" name="name" required="" placeholder="Email *">
+
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" class="required" />
+										<span>
+											Сохранить моё имя, email и адрес сайта в этом браузере для последующих моих комментариев.
+										</span>
+									</label>
+								</div>
+
+								<button class="button form__button" type="submit">
+									Отправить комментарий
+								</button>
+							</form>
+						</div>
+					</section>
+				</div>
+			</section>
+
+			<section class="order">
+				<div class="container">
+					<div class="order__header">
+						<h3>
+							Порядок и условия оказания медицинской помощи на 2023 год
+						</h3>
+						<a href="">
+							Скачать документ
+						</a>
+					</div>
+
+					<div class="order__content">
+						<span>Медицинскую помощь в рамках госпрограммы ОМС</span>
+						<span>Вы можете получить в <a target="_blank" href="">ГБУЗ ССМП</a> г. Сочи по адресу: ул. Гагарина 21.</span>
+						<span>Телефон: <a href="tel:+78622544098">+7 (862) 254-40-98</a> или <a href="tel:103">103</a></span>
+						<span>Росздравнадзор: <a href="tel:+78612753900">+7 (861) 275-39-00</a></span>
+						<span>Роспотребнадзор: <a href="tel:+78612262074">+7 (861) 226 20 74</a></span>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		@@include('components/page-blocks/_footer.html')
+
+	</div>
+
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

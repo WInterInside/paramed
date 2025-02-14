@@ -68,6 +68,10 @@ form {
 		text-align: left;
 		color: #18191F;
 		background-color: #fff;
+
+		@media only screen and (max-width: 900px) {
+			height: 200px;
+		}
 	}
 
 	.checkbox {
