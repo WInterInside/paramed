@@ -108,6 +108,16 @@ textarea::placeholder {
 		display: flex;
 		flex-direction: column;
 
+		@media only screen and (max-width: 900px) {
+			&:first-child {
+				display: none;
+			}
+
+			&--next {
+				margin-left: auto;
+			}
+		}
+
 		&--next {
 			& span {
 				display: inline-block;
