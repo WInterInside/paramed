@@ -15,6 +15,12 @@
 		}
 	}
 
+	& ul, & ol {
+		@media only screen and (max-width: 900px) {
+			padding-left: 20px;
+		}
+	}
+
 	& li {
 		margin: 6px 0;
 	}
@@ -25,6 +31,7 @@
 
 	@media only screen and (max-width: 900px) {
 		margin-top: 70px;
+		padding-bottom: 0;
 	}
 
 	&__info {
@@ -40,7 +47,7 @@
 		}
 	}
 
-	& section {
+	&__banner {
 		padding: 20px;
 		border-radius: 20px;
 		background-color: rgb(217, 83, 79);
@@ -54,6 +61,11 @@
 		& > a {
 			font-weight: 600;
 			color: #dd9933;
+		}
+
+		@media only screen and (max-width: 900px) {
+			flex-direction: column;
+			gap: 6px;
 		}
 	}
 }
